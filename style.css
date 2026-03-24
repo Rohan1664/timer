@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.top-logos {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  /* stack vertically */
+  align-items: center;
+  gap: 20px;
+  /* space between logos */
+}
+
+.top-logos img:first-child {
+  width: 580px;
+  /* main logo */
+}
+
+.top-logos img:last-child {
+  width: 520px;
+  /* season logo */
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  /* full screen */
+  background-image: url('./HACKBLITZ.png');
+
+  background-image: url('./bg.png');
+  background-size: 1900px;
+  /* fill screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* no repeat */
+  background-attachment: fixed;
+  /* optional: parallax effect */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+  /* dark transparent */
+  backdrop-filter: blur(1px);
+  padding: 40px;
+  border-radius: 15px;
+  border: rgba(255, 255, 255, 0.267) 2px solid;
+
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+#time {
+  font-size: 160px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.buttons button {
+  margin: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #334155;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background: #475569;
+}
+
+.bottom-logos {
+  position: absolute;
+  bottom: 20px;
+  /* distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 60px;
+  /* space between logos */
+  align-items: center;
+}
+
+.bottom-logos img {
+  width: 210px;
+  /* logo size */
+  height: auto;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.bottom-logos img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
